@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cabiride-Fleet Management Company</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+ </head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="Company logo" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="buy-tickets"><a href="#buy-tickets">Register</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+  <div class="nav-bg">
+  </div>
+     <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow">
+
+      <div class="container">
+        <h2>Car Rental Request Form</h2>
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm" enctype="multipart/form-data">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:11" data-msg="Please enter a valid phone number" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" name="address" id="address" placeholder="Your Address" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+            </div>
+            
+              <p>Please tick all that applies to you:</p>
+            
+            <div class="checkbox-group">
+              <input type="checkbox" name="identification" id="identification" value="Has a Valid ID" />
+              <label class="check-box"for="identification">Have a government approved ID?</label><br>
+              <input type="checkbox" name="work" id="work" value="gainfully employed" />
+              <label class="check-box"for="work">Are you employed?</label><br>
+              <input type="checkbox" name="Personalinsurance" id="Personalinsurance" value="Has Insurance" />
+              <label class="check-box"for="Personalinsurance">Have any personal insurance?</label><br>
+            </div>
+
+              <div class="form-group" id="content">
+                      <label for="identificationGovt">Photo of government issued ID * &nbsp</label>
+                        <div class="help-tip">
+                          <p>1. Drivers License <br>2. International passport<br>3. Voters card<br>4. National ID Card</p>
+                        </div>
+                      <input name="identificationGovt" type="file" class="filestyle file_1 form-control btn_file" required="" id="identificationGovt" tabindex="-1">
+              </div>
+              <div class="form-group">
+                      <label for="identificationWork">Photo of employment identifcation *</label>
+                      <input name="identificationWork" type="file" class="filestyle file_1 form-control btn_file" required="" id="identificationWork" tabindex="-1">
+              </div>
+              <div class="form-group">
+                      <label for="proofOfResidence">Proof of Residence *</label>
+                      <input name="proofOfResidence" type="file" class="filestyle file_1 form-control btn_file" required=""  id="proofOfResidence" tabindex="-1">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-3">
+                  <label for="Currency">Currency</label>
+                    <Select type="option" class="form-control" name="salaryCurrency" id="salaryCurrency">
+                      <option>NGN</option>
+                      <option>USD</option>
+                      <option>GBP</option>
+                    </Select>
+                  <div class="validation"></div>
+                </div>
+                  <div class="form-group col-md-3">
+                  <label for="startDate">Amount</label>
+                  <input type="tel" class="form-control" name="salary" id="salary" placeholder="Your salary" data-rule="minlen:4" data-msg="Please enter only numbers" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="startDate">Start Date</label>
+                  <input type="date" class="form-control" name="startDate" id="startDate" data-rule="minlen:4" data-msg="Please select a date"  />
+                  <div class="validation"></div>
+                </div>
+                 <div class="form-group col-md-3">
+                  <label for="endDate">End Date</label>
+                  <input type="date" class="form-control" name="endDate" id="endDate" data-rule="minlen:4" data-msg="Please select a date" />
+                  <div class="validation"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                      <label for="driver">Do you want a dedicated Driver?</label>
+                        <Select type="option" class="form-control" name="Driver" id="Driver">
+                          <option>Yes</option>
+                          <option>No</option>
+                        </Select>
+                      <div class="validation"></div>
+                 </div>
+                    <div class="form-group col-md-6">
+                      <label for="Mobility">Are you travelling across state lines?</label>
+                        <Select type="option" class="form-control" name="Mobility" id="Mobility">
+                          <option>Yes</option>
+                          <option>No</option>
+                        </Select>
+                      <div class="validation"></div>
+                 </div>
+            </div>     
+
+            <div class="text-center"><button name="submit" id="submit" type="submit">Submit</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- contact -->
+
+
+<!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Cabiride</strong> 2020. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by Horsemen
+      </div>
+    </div>
+    <div class="social-links">
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="phone"><i class="fa fa-phone"></i></a>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+  
+ 
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+ <!-- <script src="js/contactform.js"></script> -->
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script type="text/Javascript">
+    
+      $('form.contactForm').submit(function() {
+    var f = $(this).find('.form-group'),
+      ferror = false,
+      emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+
+    f.children('input').each(function() { // run all inputs
+
+      var i = $(this); // current input
+      var rule = i.attr('data-rule');
+
+      if (rule !== undefined) {
+        var ierror = false; // error flag for current input
+        var pos = rule.indexOf(':', 0);
+        if (pos >= 0) {
+          var exp = rule.substr(pos + 1, rule.length);
+          rule = rule.substr(0, pos);
+        } else {
+          rule = rule.substr(pos + 1, rule.length);
+        }
+
+        switch (rule) {
+          case 'required':
+            if (i.val() === '') {
+              ferror = ierror = true;
+            }
+            break;
+
+          case 'minlen':
+            if (i.val().length < parseInt(exp)) {
+              ferror = ierror = true;
+            }
+            break;
+
+          case 'email':
+            if (!emailExp.test(i.val())) {
+              ferror = ierror = true;
+            }
+            break;
+
+          case 'checked':
+            if (! i.is(':checked')) {
+              ferror = ierror = true;
+            }
+            break;
+
+          case 'regexp':
+            exp = new RegExp(exp);
+            if (!exp.test(i.val())) {
+              ferror = ierror = true;
+            }
+            break;
+        }
+        i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+      }
+    });
+
+    f.children('textarea').each(function() { // run all inputs
+
+      var i = $(this); // current input
+      var rule = i.attr('data-rule');
+
+      if (rule !== undefined) {
+        var ierror = false; // error flag for current input
+        var pos = rule.indexOf(':', 0);
+        if (pos >= 0) {
+          var exp = rule.substr(pos + 1, rule.length);
+          rule = rule.substr(0, pos);
+        } else {
+          rule = rule.substr(pos + 1, rule.length);
+        }
+
+        switch (rule) {
+          case 'required':
+            if (i.val() === '') {
+              ferror = ierror = true;
+            }
+            break;
+
+          case 'minlen':
+            if (i.val().length < parseInt(exp)) {
+              ferror = ierror = true;
+            }
+            break;
+        }
+        i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+      }
+    });
+
+        if (ferror) return false;
+    else var str = $(this).serialize();
+    var action = $(this).attr('action');
+    if( ! action ) {
+      action = '';
+    }
+    $.ajax({
+      type: "POST",
+      url: action,
+      data: str,
+
+      });
+    });
+  </script>
+
+</body>
+
+</html>
+
